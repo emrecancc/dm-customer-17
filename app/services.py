@@ -1,6 +1,10 @@
-class UserService:
-    def __init__(self, db):
-        self.db = db
+import json
+import requests
 
-    def get_user(self, user_id)
-        return self.db.query('SELECT * FROM users WHERE id = ?', user_id)
+class UserService:
+    def get_user(self, user_id):
+        response = requests.get(f"https://api.example.com/users/{user_id}")
+        if response.status_code == 200:
+            return json.loads(response.text)
+        else:
+            return None
