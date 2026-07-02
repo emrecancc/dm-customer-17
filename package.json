@@ -9,6 +9,7 @@
   "devDependencies": {
     "missing": "*",
     "jest": "*",
-    "3.10": "*"
+    "3.10": "*",
+    "pandas": "*"
   }
 }
