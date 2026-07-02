@@ -1,1 +1,1 @@
-# DevMend E2E c17 s5 cfg_ci_no_install 2026-07-02T23:46:05.163Z
+# DevMend Advanced E2E c17 s196 flaky_snapshot 2026-07-02T23:50:42.191Z
