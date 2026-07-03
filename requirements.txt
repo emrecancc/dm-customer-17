@@ -1,3 +1,2 @@
-scikit-learn
-
-tortoise-orm
+flask
+transformers
