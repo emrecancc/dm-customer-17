@@ -4,9 +4,7 @@
   "dependencies": {},
   "devDependencies": {
     "typescript": "^5",
-    "@types/node": "^20",
-    "missing": "*",
-    "jest": "*"
+    "@types/node": "^20"
   },
   "scripts": {
     "build": "tsc --noEmit || echo ok",
