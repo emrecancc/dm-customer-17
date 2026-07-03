@@ -1,1 +1,1 @@
-pandas
+setuptools>=65.0
