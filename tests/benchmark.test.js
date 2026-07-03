@@ -1,12 +1,8 @@
-// tests/benchmark.test.js
-const request = require('supertest');
-const app = require('../app');
+const { performance } = require('perf_hooks');
 
-describe('API benchmark', () => {
-  it('API responds within 400ms', async () => {
-    const start = Date.now();
-    await request(app).get('/api/health');
-    const duration = Date.now() - start;
-    expect(duration).toBeLessThan(400);
-  });
+test('API responds within 75ms', async () => {
+  const start = performance.now();
+  await fetch('http://localhost:3000/health');
+  const elapsed = performance.now() - start;
+  expect(elapsed).toBeLessThan(75);
 });
