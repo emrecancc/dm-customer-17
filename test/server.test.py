@@ -1,16 +1,17 @@
-import { server } from '../src/server';
+const server = require('../server');
+const request = require('supertest');
+
+let app;
 
 beforeAll(() => {
-  server.listen(3019);
+  app = server.listen(0);
 });
 
-// Existing tests
-
-test('example', () => {
-  // test logic
-});
-
-// Ensure the server is closed after all tests to avoid port conflicts
 afterAll(() => {
-  server.close();
+  app.close();
+});
+
+test('GET /', async () => {
+  const res = await request(app).get('/');
+  expect(res.statusCode).toBe(200);
 });
