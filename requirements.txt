@@ -1,2 +1,2 @@
-redis
-gunicorn
+opencv-python
+loguru
