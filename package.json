@@ -2,8 +2,8 @@
   "name": "dm-customer-17",
   "version": "1.0.0",
   "scripts": {
-    "build": "echo '// placeholder' > /home/runner/work/python-etl/server.js.js",
-    "start": "node /home/runner/work/python-etl/server.js.js",
+    "build": "mkdir -p dist && echo 'console.log(\"ok\")' > app.js",
+    "start": "node app.js",
     "test": "echo ok"
   }
 }
