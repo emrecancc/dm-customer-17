@@ -5,5 +5,8 @@
     "prestart": "cp server.js server.js.bak",
     "start": "node server.js.bak"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "missing": "*"
+  }
 }
