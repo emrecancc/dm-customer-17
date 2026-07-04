@@ -1,1 +1,2 @@
-sqlalchemy
+httpretty
+pillow
